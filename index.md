@@ -4,12 +4,9 @@
 
 ---
 
-## 1. El Caso de Estudio
+## Paso 1: Lectura del Caso de Estudio
 
-![Scooter Eléctrico en la ciudad](https://images.unsplash.com/photo-1593697821252-0c9137d9fc45?auto=format&fit=crop&w=800&q=80)
-*Figura 1: Sistema urbano de movilidad eléctrica.*
-
-Lee detenidamente la siguiente descripción del requerimiento:
+**Lee detenidamente la siguiente descripción del requerimiento para identificar las entidades principales del sistema.**
 
 > "Se requiere diseñar la lógica para una aplicación de renta de scooters. En el sistema, cada **Scooter** cuenta con un número de identificación (ej. 'S-001'), un nivel de batería (del 0 al 100) y un estado lógico que indica si está disponible para usarse o no. Los scooters pueden ejecutar tres acciones: desbloquearse para iniciar un viaje, terminar su viaje, y recargar su batería al 100%.
 > 
@@ -17,9 +14,9 @@ Lee detenidamente la siguiente descripción del requerimiento:
 
 ---
 
-## 2. Análisis y Diccionario de Clases
+## Paso 2: Análisis y Diccionario de Clases
 
-**Nota:** En el análisis de requerimientos, los sustantivos suelen representar Clases o Atributos, mientras que los verbos representan Métodos. Completa la siguiente estructura considerando los tipos de datos adecuados.
+**Completa la siguiente estructura identificando los atributos y métodos. Recuerda que los sustantivos suelen representar Clases o Atributos, mientras que los verbos representan Métodos. Utiliza los modificadores de acceso y tipos de datos adecuados en cada línea vacía.**
 
 ### Entidad 1: `__________________`
 **Atributos (Acceso privado `-`):**
@@ -43,17 +40,17 @@ Lee detenidamente la siguiente descripción del requerimiento:
 
 ---
 
-## 3. Diseño del Diagrama de Clases UML
+## Paso 3: Diseño del Diagrama de Clases UML
 
-A partir de la información estructurada en la sección anterior, elabora un Diagrama de Clases formal. Asegúrate de incluir los tres bloques estándar: Nombre de la clase, Atributos y Métodos con sus respectivos parámetros y valores de retorno.
+**A partir de la información estructurada en el paso anterior, elabora un Diagrama de Clases formal. Asegúrate de incluir los tres bloques estándar (Nombre de la clase, Atributos y Métodos) y adjuntar la captura o imagen del diagrama resultante en tu documento.**
 
-*(Se recomienda utilizar la herramienta Draw.io para generar el diagrama y adjuntar la imagen resultante en esta sección de su documento).*
+*(Herramienta sugerida: Draw.io)*
 
 ---
 
-## 4. Instanciación (De la Teoría a la Realidad)
+## Paso 4: Instanciación (De la Teoría a la Realidad)
 
-El diagrama de clases funciona como un molde estructural. A continuación, define instancias en memoria asignando valores concretos a los atributos.
+**El diagrama de clases funciona como un molde estructural. A continuación, define instancias en memoria asignando valores concretos a los atributos de cada objeto para ejemplificar su estado.**
 
 **Instancia de Scooter 1**
 * `id = `
@@ -66,5 +63,13 @@ El diagrama de clases funciona como un molde estructural. A continuación, defin
 
 ---
 
-## Pregunta de Análisis Lógico
-Si la Instancia de Usuario 1 intenta ejecutar el método `rentar()` enviando como parámetro un Scooter que tiene un 15% de batería, ¿cómo debería comportarse internamente la lógica del sistema? Justifica tu respuesta.
+## Paso 5: Pregunta de Análisis Lógico
+
+**Justifica tu respuesta a la siguiente interrogante lógica basándote en los conceptos de POO estudiados:**
+
+Si la Instancia de Usuario 1 intenta ejecutar el método `rentar()` enviando como parámetro un Scooter que tiene un 15% de batería, ¿cómo debería comportarse internamente la lógica del sistema? 
+
+---
+
+> [!IMPORTANT]
+> <span style="color: #d32f2f; font-weight: bold; font-size: 1.1em;">INSTRUCCIONES DE ENVÍO: Copia todo el contenido de esta página en un documento de Word o Google Docs, resuelve los espacios en blanco, pega la imagen de tu diagrama UML en el Paso 3 y envía el archivo final en formato PDF a través de la plataforma oficial para su revisión.</span>
