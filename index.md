@@ -1,67 +1,70 @@
-# 🛴 Práctica de POO: Sistema de Scooters Eléctricos
+# Práctica de Programación Orientada a Objetos: Sistema de Scooters Eléctricos
 
-**Objetivo:** Comprender la estructura de un sistema orientado a objetos identificando clases, atributos, métodos, y diferenciando el "molde" (Clase) de la "realidad" (Objetos).
+**Objetivo:** Comprender la estructura de un sistema orientado a objetos identificando clases, atributos y métodos, diferenciando el concepto abstracto (Clase) de su implementación (Objeto).
 
 ---
 
-## 📖 1. El Caso de Estudio
+## 1. El Caso de Estudio
 
-Lee detenidamente la siguiente descripción de nuestro sistema:
+![Scooter Eléctrico en la ciudad](https://images.unsplash.com/photo-1593697821252-0c9137d9fc45?auto=format&fit=crop&w=800&q=80)
+*Figura 1: Sistema urbano de movilidad eléctrica.*
 
-> *"Estamos diseñando la lógica para una aplicación de renta de scooters en la ciudad. En nuestro sistema, cada **Scooter** tiene un número de identificación (ej. 'S-001'), un nivel de batería (del 0 al 100) y un estado que nos dice si está disponible para usarse o no. Los scooters pueden realizar tres acciones: desbloquearse para iniciar un viaje, terminar su viaje, y recargar su batería al 100%.*
+Lee detenidamente la siguiente descripción del requerimiento:
+
+> "Se requiere diseñar la lógica para una aplicación de renta de scooters. En el sistema, cada **Scooter** cuenta con un número de identificación (ej. 'S-001'), un nivel de batería (del 0 al 100) y un estado lógico que indica si está disponible para usarse o no. Los scooters pueden ejecutar tres acciones: desbloquearse para iniciar un viaje, terminar su viaje, y recargar su batería al 100%.
 > 
-> *Por otro lado, tenemos al **Usuario**, que se registra con su nombre y mantiene un saldo de dinero en su cuenta. El usuario puede hacer dos cosas: agregar más saldo a su cuenta y rentar un scooter específico."*
+> Por otro lado, la entidad **Usuario** se registra con su nombre y mantiene un saldo monetario en su cuenta. El usuario puede realizar dos acciones operativas: agregar más saldo a su cuenta y rentar un scooter específico."
 
 ---
 
-## 🔍 2. Análisis (Diccionario de Clases)
+## 2. Análisis y Diccionario de Clases
 
-💡 **TIP:** Los **Sustantivos** suelen ser Clases/Atributos. Los **Verbos** suelen ser Métodos.
+**Nota:** En el análisis de requerimientos, los sustantivos suelen representar Clases o Atributos, mientras que los verbos representan Métodos. Completa la siguiente estructura considerando los tipos de datos adecuados.
 
 ### Entidad 1: `__________________`
 **Atributos (Acceso privado `-`):**
-* `- _________________ : ___________ ` *(identificador)*
-* `- _________________ : ___________ ` *(batería)*
-* `- _________________ : ___________ ` *(estado)*
+* `- _________________ : ___________ ` (identificador)
+* `- _________________ : ___________ ` (batería)
+* `- _________________ : ___________ ` (estado de disponibilidad)
 
 **Métodos (Acceso público `+`):**
-* `+ _________________() : boolean ` *(iniciar viaje)*
-* `+ _________________() : void ` *(finalizar viaje)*
-* `+ _________________() : void ` *(llenar batería)*
+* `+ _________________() : boolean ` (iniciar viaje)
+* `+ _________________() : void ` (finalizar viaje)
+* `+ _________________() : void ` (llenar batería)
 
 ### Entidad 2: `__________________`
 **Atributos (Acceso privado `-`):**
-* `- _________________ : ___________ ` *(nombre)*
-* `- _________________ : ___________ ` *(dinero)*
+* `- _________________ : ___________ ` (nombre)
+* `- _________________ : ___________ ` (dinero)
 
 **Métodos (Acceso público `+`):**
-* `+ _________________(monto: double) : void ` *(meter dinero)*
-* `+ _________________(scooter: Scooter) : boolean ` *(usar scooter)*
+* `+ _________________(monto: double) : void ` (agregar saldo)
+* `+ _________________(scooter: Scooter) : boolean ` (rentar scooter)
 
 ---
 
-## 📐 3. Diseño del Diagrama de Clases UML
+## 3. Diseño del Diagrama de Clases UML
 
-Pasa la información de la sección anterior a un Diagrama de Clases formal (con sus tres bloques: Nombre, Atributos y Métodos). 
+A partir de la información estructurada en la sección anterior, elabora un Diagrama de Clases formal. Asegúrate de incluir los tres bloques estándar: Nombre de la clase, Atributos y Métodos con sus respectivos parámetros y valores de retorno.
 
-*(Puedes usar herramientas gratuitas como [Draw.io](https://app.diagrams.net/) para armarlo).*
+*(Se recomienda utilizar la herramienta Draw.io para generar el diagrama y adjuntar la imagen resultante en esta sección de su documento).*
 
 ---
 
-## 🧩 4. De la Teoría a la Realidad (Objetos)
+## 4. Instanciación (De la Teoría a la Realidad)
 
-El diagrama es el "molde". Ahora define instancias reales asignando valores a los atributos.
+El diagrama de clases funciona como un molde estructural. A continuación, define instancias en memoria asignando valores concretos a los atributos.
 
-**Objeto Scooter 1**
+**Instancia de Scooter 1**
 * `id = `
 * `nivelBateria = `
 * `estaDisponible = `
 
-**Objeto Usuario 1**
+**Instancia de Usuario 1**
 * `nombre = `
 * `saldo = `
 
 ---
 
-## 🤔 Reflexión para discutir:
-Si el **Objeto Usuario 1** intenta llamar al método `rentar()` utilizando un **Scooter** que tiene un 15% de batería, ¿qué debería hacer internamente tu código?
+## Pregunta de Análisis Lógico
+Si la Instancia de Usuario 1 intenta ejecutar el método `rentar()` enviando como parámetro un Scooter que tiene un 15% de batería, ¿cómo debería comportarse internamente la lógica del sistema? Justifica tu respuesta.
