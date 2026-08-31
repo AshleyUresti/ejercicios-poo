@@ -67,5 +67,6 @@ EVIDENCIASS
 
 <img width="1920" height="1080" alt="Captura de pantalla (186)" src="https://github.com/user-attachments/assets/54b19261-d986-4ba7-9bf6-0586880084a5" />
 
+<img width="1920" height="1080" alt="Captura de pantalla (188)" src="https://github.com/user-attachments/assets/338fce02-8bb0-48ee-bbd5-66d17c569b27" />
 
 
